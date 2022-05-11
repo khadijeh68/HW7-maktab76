@@ -11,7 +11,7 @@ function recurIndex(str){
         }
     }   
         return arr;
-        
+        /
     });
     console.log(obj);   
 }

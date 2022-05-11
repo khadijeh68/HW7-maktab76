@@ -6,9 +6,6 @@ function returnNumbers(array) {
                     arr.push(array[i]);
                     break;
                 }
-                if ( array == "" ){
-                    return [];
-                }
             }            
         }   
         return arr;    
