@@ -1,21 +1,19 @@
 function recurIndex(str){
-    let obj = {};
     let arr = [];
-    let array = [...str];
-    array.map((item , index) => {
-        obj[item] = item;
-        console.log(item);
-    for (let i of item) {
-        if (item[i] === item[i+1]){
-          arr.push(item);
+    let arr2 = [];
+    let str2 = str.split('');
+    console.log(str2);
+    for (let i=0; i<str2.length; i++) {
+        for (var j=i+1; j<str2.length; j++) {
+            if (str[i] === str[j]) {
+                arr.push(str[i]);
+                arr2.push(i);
+            }
         }
-    }   
-        return arr;
-        /
-    });
-    console.log(obj);   
-}
+    }
+    console.log(arr);
+    console.log(arr2);
+}   
 recurIndex("AREDCBSDERD");
-
 
 //recurIndex("AREDCBSDERD") ➞ {"D": [3, 7]}

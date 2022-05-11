@@ -1,15 +1,15 @@
 //filter method
-// function filterMethod(array){
-//     let arr = [];
-//     for ( let i = 0 ; i < array.length ; i++){
-//         if ( array[i].length > 5 ){
-//             arr.push(array[i]);
-//         }
-//     }
-//     return arr;
-// }
-// let newArray = ["hello" , "world" , "javaScript" , "123456"]
-// console.log(filterMethod(newArray));
+function filterMethod(array){
+    let arr = [];
+    for ( let i = 0 ; i < array.length ; i++){
+        if ( array[i].length > 5 ){
+            arr.push(array[i]);
+        }
+    }
+    return arr;
+}
+let newArray = ["hello" , "world" , "javaScript" , "123456"]
+console.log(filterMethod(newArray));
 
 //find method
 // function findMethod(array){
@@ -38,28 +38,24 @@
 // function spliceMethod (array , index , number , arr){
 //     let newArray = [];   
 //     for ( let i = index ; i < array.length ; i++){
-//         if((i <= index + number && i >=  index) || (i <= index && i >=  index + number)){
+//         if(i < index + number){
 //             newArray = array[i].pop;
-//             array[i] = arr;  
-//             break;       
-//         }
+//             array[i] = arr;                 
+//         }     
 //     }  
-//     console.log(array); 
+//     return array;
 // }
-// spliceMethod (["iam"  , "leraning"  , "java" , "Script"] , 2 , 1 , "hello");
+// console.log(spliceMethod (["text"  , "world"  , "java" , "Script"] , 0 , 2 , "hello"));
 
 //some method
-function filterMethod(array){
-    let arr = [];
-    let lengthBiggerThan5 = array[i].length;
-    for ( let i = 0 ; i < array.length ; i++){
-        if ( lengthBiggerThan5 ){
-           return true;
-    } else {
-        return false;
-    }
-  
-}
-}
-let newArray = ["hello" , "world" , "javaScript" , "123456"]
-console.log(filterMethod(newArray));
+// function filterMethod(array){
+//     let trueFalse = false;
+//     for ( let i = 0 ; i < array.length ; i++){
+//         if ( array[i].length > 8 ){
+//             trueFalse = true;
+//         } 
+//     }
+//     return trueFalse;
+// }
+// let newArray = ["hello" , "world" , "javaScript" , "123456"]
+// console.log(filterMethod(newArray));
